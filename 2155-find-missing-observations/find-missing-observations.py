@@ -7,14 +7,10 @@ class Solution:
             ans = []
             return ans
         else:
-            ans = [1]*n
-            sum_n -= n
-            idx = 0
-            while(sum_n != 0):
-                ans[idx]+=1
-                if ans[idx]==6:
-                    idx+=1
-                sum_n-=1
+            ans = [sum_n//n]*n
+            remainder = sum_n%n
+            for i in range(remainder):
+                ans[i]+=1
             return ans
             
 
