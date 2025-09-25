@@ -1,3 +1,6 @@
+// Time: O(n²) 
+// Space: O(1) 
+
 class Solution {
 public:
     int minimumTotal(vector<vector<int>>& triangle) {
